@@ -1,20 +1,24 @@
+package exercise.pizzastore.simplefactory;
+
+
+
 public class PizzaStore {
-        SimplePizzaFactory factory;
+    SimplePizzaFactory factory;
 
-        public PizzaStore(SimplePizzaFactory factory) {
-                this.factory = factory;
-        }
+    public PizzaStore(SimplePizzaFactory factory) {
+        this.factory = factory;
+    }
 
-        public Pizza orderPizza(String type) {
-                Pizza pizza;
+    public Pizza orderPizza(String type) {
+        Pizza pizza;
 
-                pizza = factory.createPizza(type);
+        pizza = factory.createPizza(type);
 
-                pizza.prepare();
-                pizza.bake();
-                pizza.cut();
-                pizza.box();
-                return pizza;
-        }
-        // other methods here
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+        return pizza;
+    }
+    // other methods here
 }

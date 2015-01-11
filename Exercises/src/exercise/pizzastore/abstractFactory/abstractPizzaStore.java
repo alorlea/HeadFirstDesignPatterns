@@ -1,4 +1,8 @@
-public abstract class AbstractPizzaStore{
+package exercise.pizzastore.abstractFactory;
+
+import exercise.pizzastore.pizzas.Pizza;
+
+public abstract class abstractPizzaStore {
 
     public Pizza orderPizza(String type){
         Pizza pizza;
@@ -12,5 +16,5 @@ public abstract class AbstractPizzaStore{
         return pizza;
     }
     //Concrete Factories need to implement this method
-    abstract Pizza createPizza(String type);
+    protected abstract Pizza createPizza(String type);
 }
