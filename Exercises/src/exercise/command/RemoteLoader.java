@@ -38,6 +38,7 @@ public class RemoteLoader {
         StereoOffCommand  stereoOff =
                 new StereoOffCommand(stereo);
 
+        //Lambda expressions examples (i.e: like old anonymous inner classes)
         remoteControl.setCommand(0, livingRoomLight::on, livingRoomLight::off);
         remoteControl.setCommand(1, ()->{kitchenLight.on();}, ()->{kitchenLight.off();});
         remoteControl.setCommand(2, ceilingFanOn, ceilingFanOff);
