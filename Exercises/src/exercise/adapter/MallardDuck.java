@@ -4,7 +4,7 @@ package exercise.adapter;
 /**
  * Created by Alberto on 2015-01-13.
  */
-public class MallardDuck implements Duck {
+public class MallardDuck implements DuckInterface {
 
     @Override
     public void quack() {

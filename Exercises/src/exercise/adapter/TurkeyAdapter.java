@@ -3,7 +3,7 @@ package exercise.adapter;
 /**
  * Created by Alberto on 2015-01-13.
  */
-public class TurkeyAdapter implements Duck {
+public class TurkeyAdapter implements DuckInterface {
     Turkey turkey;
 
     public TurkeyAdapter(Turkey turkey){

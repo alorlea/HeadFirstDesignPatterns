@@ -8,7 +8,7 @@ public class DuckTestDrive {
         MallardDuck duck = new MallardDuck();
 
         WildTurkey turkey = new WildTurkey();
-        Duck turkeyAdapter = new TurkeyAdapter(turkey);
+        DuckInterface turkeyAdapter = new TurkeyAdapter(turkey);
 
         System.out.println("The Turkey says...");
         turkey.gobble();
@@ -22,7 +22,7 @@ public class DuckTestDrive {
 
     }
 
-    static void testDuck(Duck duck){
+    static void testDuck(DuckInterface duck){
         duck.quack();
         duck.fly();
     }
